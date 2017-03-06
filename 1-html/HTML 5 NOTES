@@ -1,0 +1,106 @@
+HTML 5 NOTES
+find HTML in chrome - right click and "view pagesource"
+<body> where the info of a page is
+<div> divides the information in sections
+<p> for normal text
+< > tags only in html
+<title> shows up at the op of the browser
+<h> only goes up to 6; if we try 7, it will give us regular text
+	using key words in h1 tag will be more likely to pop up in google searches
+<p> doesn't restyle texts; used to manually put lines in between texts
+	1) use the tags on each line - do this if there's different formatting for each line
+	2)in between <p> can put a line break <br> to create new line, but there's no space in between
+		br self-closing tag - could be <br /> for xhtml
+Bold is <b> but encouraged to use <strong> because it's easier to read
+Italic is <i> or <em> (for emphasis)
+Underline is <u> or <ins> (for inserted)
+<sup> superscript
+<sub> subscript
+<del> is for strike out text aka deleted text
+<hr> self closing; may need <hr /> for xhtml
+www.w3schools.com for more html formatting
+Unordered Lists - bullet point
+	<ul> </ul>
+	List item <li> </i>
+Ordered Lists - numbered
+	<ol> </ol>
+	List item again with li tag 
+	if want to change start value
+		put <ol start="10"> 
+		<ol reversed="x"> reverses order
+		<ol type=
+		"A" - ABCs
+		"a" - abcs
+		"I" - I, II, III
+		"i" - i, ii, iii
+
+Image - IMG
+	<img> self closing tag
+		<img src="homer.png"> - saved photo
+			Changing size
+			<img src="" width="" height="" align"right"
+		img linked from website
+			<img src="link here"
+				known as "hot" linking
+				best to downlaod img instead
+			
+<Form>
+	<input> has several attributes; self closing tag
+		type="text"> (default type)
+		type="checkbox"> - can select multiple boxes
+		type="radio"> - with each set, can only select one box
+		when having multiple, can select both, must specify wiht name=""
+			eg. <input type="radio" name="age">
+		type="submit">
+		
+		value="" customizes text in box
+				Can add value= to any of the inputs to customize text
+				adding value to radio can see in code which has been selected
+
+		placeholder="" similar to value=, but is more of a hint; won't have to select and delete; provides guidance of what to put in the box
+		checked
+			eg. <input type="checkbox" checked> will automatically check the box
+
+
+	<select>
+		creates a drop-down list
+		eg. Favourite foods
+		<option>pizza</option>
+		<option>ice cream</option>
+	<option selected> eg. </option> will create the default in select
+
+<Table>
+	have table rows <tr>
+		have table cells <td>
+		eg. <tr>
+			<td>rob</td>
+			<td>green</td>
+			</tr>
+	table head <thead>
+		<tr>
+			<th>Name</th>
+			<th>Favourite colour</th>
+	if using thead, should have <tbody> following
+
+LINKS
+3 types of linkes
+	Anchor links - take you to a different portion of the page you're currently on
+		Linking within our own website need an id
+		<p id="top"> for the referral
+		<><a href="#top">Back to top</a></p>
+	Absolute links - takes you to specific link on the web
+		<a href="link here"></a>
+		add IMG is <a href="link here><img src="img here"></a>
+	Relative links - take you to a page on your website
+		<p><a href="helloworld.html></a></p>
+		
+Entities
+	Way of displaying symbols/characters on your page
+
+iFrames
+	Content from other website in yours
+		eg. eco webhosting
+
+	<iframe src="http://ecowebhosting.co.uk"></iframe>
+	something like this is useful for translation websites, videos, etc.
+	can add frameborder="0" to get rid of the default line around the frame

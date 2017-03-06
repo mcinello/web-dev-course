@@ -1,0 +1,165 @@
+CASCADING STYLE SHEET - CSS
+<p style="color:blue;font-size:50%"
+	This styling is not recommended
+		hard to read
+		difficult to maintain
+		linked to a specific <p>
+		Solution is Interal CSS
+INTERNAL CSS
+	<style></style>
+		traditional to put it inside <head></head> section
+	<style type="text/css">
+	p {}
+		list what you want related to p
+			eg. color, size
+CLASSES
+want to change the different sentences in the p
+	<p class="red">
+		.red
+		{
+
+		}
+	class= can contain more than 1 type"text/csselement
+		<p class="red large">
+IDs
+	<p id="green"
+
+	#green {
+
+	}
+
+	id should only be used once per page
+	class can be used more than once
+styling text within a p tag
+	<span></span>
+DIVs
+division - a group of HTML elements
+
+COLOR
+	eg. color:
+	 background-color:
+can use HTML Color Codes
+	#FFFFFF
+
+FLOATING
+	positioning the divs
+	everything floated left will be aligned to left of the screen
+	left is default
+Combining elements that are floated vs. elements not floated
+	anything not floated will put itself in the "flow" of the page
+		subject to change when browser size changes
+	clear:both;
+		so it doesn't "float" between the divs
+POSITIONING
+	more precise than floating
+	position: relative;
+		position it where it defaults
+		needed before every specific positioning
+		creating a type of margin
+			left: 100pc - moves to right, creates margin on left
+			left: -50px will move it to the left
+			top:
+	z-index: helps with overlapping elements
+		the higher number will layer on top
+	opactiy - bigger the number, less see-through it is
+		creates a fade/transparent look in the div
+	position: absolute;
+		2nd div will go behind the 1st div
+		takes the object out of flow of the page
+		2nd div will begin where 1st div is cause it won't be considered
+		if you want to position it over the top of everything else
+	position: fixed;
+		different from absolute
+		absolute will move when page is scrolled
+		fix will not let the div move even as you scroll down the page
+	relative an move element relative to where it would other wise be
+	abs takes element out off flow of the page allows to move around relative to top left of the page
+	fixed keeps element in place 
+	all 3 can use left and top to move it
+	opacity change see-thru of object
+	z-index for what goes in front
+
+	PADDING
+	Implementing space within the div even after you set the with
+	Websites have default settings, may need to set the padding, margin and p tags
+	eg. body
+	{
+		margin: 0;
+		padding: 0;
+	}
+
+BORDERS
+border: pixel color solid
+
+border-style : ridge solid dotted dashed;
+border-color
+border-width
+
+could be very specific and do:
+eg. border-left-style
+
+border-radius adds a radius to edge of square - it makes it more circular than a square.
+
+
+	set border-radius px to half of the div (eg. 50px) will make it perfectly circular
+		2 ways to do it:
+		50px - based on half of the div px
+		50% - will automatically do it
+
+
+	FONTS
+
+	font-famly egs
+		cursive
+		fantasy
+		inherit
+		monospace
+		sans-serif
+		serif
+
+Google Fonts
+	repository of a huge number of fonts used and hosted
+	lots of flexibility
+	provides links to external style sheet
+	external css
+
+STYLING TEXT
+
+Main types of styling to be used:
+font-weight for bold
+font-style for italic
+text-decoration for underline
+text-decoration: none; for no underline of links
+
+a:hover - styling a link in a certain condition (ie when it's hovered)
+a:hover
+{
+	text-decoration: underline;
+	color: green;
+}
+
+ALIGNING TEXT
+text-align: right; will align the text to the right eg. the "parent element"
+	 "parent element" setting the <p> tag in just the body of the page or within a div
+	text-align: justify;
+		stretches the text to the end of the page
+
+Lorem Ipsum
+	 handy page for creating latin text (usually the generic thing used)
+
+
+STYLING LINKS
+to make sure there's only a line when you hover over the link:
+a
+	{ text-decoration: none;
+	 }
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:visited (links you already clicked)
+{
+	color: green;
+}
+
